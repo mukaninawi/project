@@ -1,1 +1,26 @@
-coba isi
+http://www.kodingindonesia.com/belajar-git-github/3/
+
+configurasi agar terhubung dengan GitHub
+
+$ git config --global user.name "usernamekamu"
+
+$ git config --global user.email "emailkamu"
+
+$ git config --global color.ui "true"
+
+next -->
+
+$ ssh-keygen
+
+next -->
+
+Buka folder .ssh pada directory C -> Users -> Nama User PC kamu -> .ssh
+
+Copy ssh rsa dan paste ke github
+
+Login ke akun GitHub, dan buka menu Settings dan klik menu SSH and GPG Keys
+
+
+clone data dari GitHub ke data local
+
+$ git clone https://github.com/mukaninawi/project.git
