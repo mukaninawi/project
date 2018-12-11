@@ -1,0 +1,71 @@
+Tutorial Install GIT in Windows
+-------------------------------
+/* Mukani Nawi @ 11-12-2018 */
+-------------------------------
+
+$ cd /c
+
+- create new folder GIT in C/
+
+$ cd GIT/ 
+
+$ git config --global user.name "usernamekamu"
+
+$ git config --global user.email "emailkamu"
+
+$ git config --global color.ui "true"
+
+next -->
+
+$ ssh-keygen
+
+next -->
+
+Buka folder .ssh pada directory C -> Users -> Nama User PC kamu -> .ssh
+Copy ssh rsa dan paste ke github
+Login ke akun GitHub, dan buka menu Settings dan klik menu SSH and GPG Keys
+clone data dari GitHub ke data local
+
+$ git clone https://github.com/mukaninawi/project.git
+
+// upload file
+
+git init //create new folder
+git add . 
+git commit -m "first commit" 
+git remote add origin https://github.com/aisy/js-belajar-react.git 
+git push -u origin master
+
+// mengupload keseluruhan file pada repo (hanya digunakan saat upload pertama saja)
+git add .
+// mengupload file sesuai dengan nama file
+git add index.html
+// mengupload file pada dalam folder
+git add pages/index.html
+
+git remote -v
+# View current remotes
+origin  https://github.com/OWNER/REPOSITORY.git (fetch)
+origin  https://github.com/OWNER/REPOSITORY.git (push)
+
+git remote rm destination
+# Remove remote
+git remote -v
+
+//saat pertama kali
+$ git add test.txt
+$ git status
+$ git commit -m "first commit" test.txt
+
+$ git push -u origin master
+
+-- Update
+
+$ git status
+$ git commit -m "secont commit" test.txt
+$ git push -u origin master
+
+-- END
+
+hapus branch integrasi yang sudah selesai
+git branch -D (branch)
