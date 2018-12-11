@@ -69,3 +69,8 @@ $ git push -u origin master
 
 hapus branch integrasi yang sudah selesai
 git branch -D (branch)
+
+-- 
+Pull dari remote repo
+
+$ git pull
